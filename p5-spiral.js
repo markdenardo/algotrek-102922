@@ -1,4 +1,3 @@
-
 p1 = new P5()
 s0.init({src:p1.canvas})
 p1.draw=()=>{
@@ -12,9 +11,10 @@ p1.background(0, 220, 204);
 		p1.push();
 		p1.rotate(i*100 / 15.0);
 		p1.scale(i / 16.0);
-		p1.ellipse(i,i, 100, 100);
+		p1.ellipse(i,p1.mouseY, 100, 100);
 		p1.pop();
 	}
 }
-src(s0).modulate(o0,()=>Math.sin(Math.random(Math.PI))).repeat(2,1).out(o0)
+const f =()=>a.fft[0]
+src(s0).modulate(o0,()=>Math.sin(Math.random(Math.PI))).add(solid(0,0,0)).out(o0)
 render(o0)
