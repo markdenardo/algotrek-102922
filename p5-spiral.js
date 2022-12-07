@@ -1,3 +1,5 @@
+// p5 sketch in hydra-synth; utilizing webGL
+//sketch to be used for hydra-synth: https://hydra.ojack.xyz/
 p1 = new P5()
 s0.init({src:p1.canvas})
 p1.draw=()=>{
